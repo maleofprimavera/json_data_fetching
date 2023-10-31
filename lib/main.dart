@@ -3,18 +3,18 @@ import 'package:json_data_fetching/get_data.dart';
 import 'package:json_data_fetching/result_2.dart';
 import 'package:json_data_fetching/welcome_generic.dart';
 import "dart:core";
-import 'package:reflectable/reflectable.dart';
+// import 'package:reflectable/reflectable.dart';
 // import 'reflectable.dart'; // Import generated code.
 
 // Annotate with this class to enable reflection.
-class Reflector extends Reflectable {
-  const Reflector()
-      : super(invokingCapability); // Request the capability to invoke methods.
-}
+// class Reflector extends Reflectable {
+//   const Reflector()
+//       : super(invokingCapability); // Request the capability to invoke methods.
+// }
+//
+// const reflector = const Reflector();
 
-const reflector = const Reflector();
-
-@reflector // This annotation enables reflection on A.
+// @reflector // This annotation enables reflection on A.
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   GetJsonObject getJsonObject =  GetJsonObject(fileName: "assets/mockResponse2.json");
