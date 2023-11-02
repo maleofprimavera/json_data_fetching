@@ -5,10 +5,10 @@ import 'package:json_data_fetching/result_2.dart';
 import 'package:json_data_fetching/welcome_generic.dart';
 import 'package:json_data_fetching/welcome_model.dart';
 
-class GetJsonObject {
+class GetWelcomeResult2 {
   final String fileName;
 
-  GetJsonObject({required this.fileName});
+  GetWelcomeResult2({required this.fileName});
 
   Future<WelcomeGeneric<Result2>> fromJsonFile() async  {
     // File localJsonFile = File('assets/mockResponse2.json');

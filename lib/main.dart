@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:json_data_fetching/get_data.dart';
 import 'package:json_data_fetching/result_2.dart';
 import 'package:json_data_fetching/welcome_generic.dart';
 import "dart:core";
+
+import 'welcome_result_2.dart';
 // import 'package:reflectable/reflectable.dart';
 // import 'reflectable.dart'; // Import generated code.
 
@@ -17,8 +18,8 @@ import "dart:core";
 // @reflector // This annotation enables reflection on A.
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
-  GetJsonObject getJsonObject =  GetJsonObject(fileName: "assets/mockResponse2.json");
-  WelcomeGeneric<Result2> welcomeGeneric = await getJsonObject.fromJsonFile();
+  GetWelcomeResult2 getWelcomeResult2 =  GetWelcomeResult2(fileName: "assets/mockResponse2.json");
+  WelcomeGeneric<Result2> welcomeGeneric = await getWelcomeResult2.fromJsonFile();
   print(welcomeGeneric.result?.products?.elementAt(0).name);
 }
 // class MyApp extends StatelessWidget {

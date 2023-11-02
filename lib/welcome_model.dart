@@ -11,7 +11,8 @@ class Welcome {
   @JsonKey(name: "numberOfResult")
   dynamic numberOfResult;
   @JsonKey(name: "result")
-  Result? result;
+  Result
+  ? result;
 
   Welcome({
     this.message,
